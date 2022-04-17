@@ -115,7 +115,7 @@ async def on_message(message):
     await message.channel.send("See you later!")
   
   elif 'educate' in message.content.lower():# checks for relax input
-    await message.channel.send("Which category are you interested in?\n1.Business\n2.Entertainment\n3.General\n4.Health\n5.Science\n6.Technology\n")
+    await message.channel.send("Which category are you interested in?\n1.Business\n2.Celebrity\n3.General\n4.Health\n5.Science\n6.Technology\n")
     news=True
   
   elif 'entertain' in message.content.lower():# checks for entertain input
