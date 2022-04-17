@@ -5,6 +5,7 @@ import requests
 import random
 from newsapi import NewsApiClient
 import time
+from keep_alive import keep_alive
 
 token = os.environ['token']# using env variable to store bot token
 client=discord.Client()
@@ -165,6 +166,7 @@ async def on_message(message):
   
   
 #to run the bot
+keep_alive()
 client.run(token)
     
 
